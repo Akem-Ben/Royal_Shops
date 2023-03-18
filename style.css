@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    font-size: 3.125em;
+    /* line-height: 4em; */
+    color: #222;
+}
+
+h2 {
+    font-size: 2.875em;
+    /* line-height: 3.375em; */
+    color: #222;
+}
+
+h4 {
+    font-size: 1.25em;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 0.75em;
+}
+
+p {
+    font-size: 1em;
+    color: #465b52;
+    margin: 0.9375em 0 1.25em 0;
+}
+
+/*NaveBar Section!!*/
+.section-p1 {
+    padding: 2.5em 5em;
+}
+
+.section-m1 {
+    padding: 2.5em 0;
+}
+
+body {
+    width: 100%
+}
+
+.logo {
+    width: 6em;
+    height: 6em;
+}
+
+#carts {
+    /* padding-top: 0.4em; */
+    width: 2em;
+    height: 2em;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25em 5em;
+    background: #E3E6F3;
+    box-shadow: 0em 0.3125em 0.9375em rgba(0, 0, 0, 0.06);
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#navbar li {
+    list-style: none;
+    padding: 0 1.25em;
+    position: relative;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    color: #1A1A1A;
+    transition: 0.5s ease;
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+/*To leave a small line under the page while it is currently being viewed. But make sure you set the position in the parent element 
+(#navbar li )as relative while this child bears absolute. Also add the same design to other navbar elements when they're being hovered upon*/
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 0.2em;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/*Hero Section!!*/
